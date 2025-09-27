@@ -1,0 +1,30 @@
+{
+  "functions": {
+    "src/app/api/cron-control/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/currency-analysis/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/market-data/route.ts": {
+      "maxDuration": 60
+    },
+    "src/app/api/heavy-task/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "regions": ["iad1"],
+  "buildCommand": "npm run build",
+  "env": {
+    "PRISMA_CLI_BINARY_TARGET": "rhel-openssl-3.0.x",
+    "PRISMA_QUERY_ENGINE_BINARY": "rhel-openssl-3.0.x"
+  },
+  "build": {
+    "env": {
+      "PRISMA_CLI_BINARY_TARGET": "rhel-openssl-3.0.x"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# Vercel Environment Variables Template
+# Copy these values to your Vercel dashboard under Settings > Environment Variables
+
+## Basic Configuration
+NODE_ENV=production
+
+## Database Configuration (Supabase example)
+# 推奨: Connection Pooling使用
+DATABASE_URL=postgresql://username:password@host:6543/database?sslmode=require&pgbouncer=true&connect_timeout=60&pool_timeout=60
+
+# フォールバック: 直接接続
+# DATABASE_URL=postgresql://username:password@host:5432/database?sslmode=require&connect_timeout=30
+
+## Authentication (Optional)
+BASIC_AUTH_USERNAME=admin
+BASIC_AUTH_PASSWORD=your_secure_password
+
+## Cron Job Configuration (Optional)
+CRON_SCHEDULE=0 0,10,20,30,40,50 6-23 * * 1-5
+CRON_SECRET=your_secret_key_for_cron_authentication
+
+## API Keys (Examples)
+# OPENAI_API_KEY=sk-...
+# STRIPE_SECRET_KEY=sk_...
+# SENDGRID_API_KEY=SG...
+
+## Application Specific
+# APP_URL=https://your-app.vercel.app
+# JWT_SECRET=your_jwt_secret
+
+## Notes:
+# - パスワードの特殊文字はURLエンコードが必要
+#   ! → %21, @ → %40, # → %23
+# - 本番環境では強力なパスワードを使用
+# - 機密情報をGitリポジトリにコミットしない
