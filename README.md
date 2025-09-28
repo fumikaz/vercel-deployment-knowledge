@@ -12,12 +12,15 @@
 
 ```
 vercel-deployment-knowledge/
-├── README.md                    # このファイル
-├── docs/                        # 詳細ドキュメント
-│   ├── 01-setup-guide.md       # 初期セットアップガイド
-│   ├── 02-database-config.md   # データベース設定
-│   ├── 03-api-optimization.md  # API最適化
-│   └── 04-troubleshooting.md   # トラブルシューティング
+├── README.md                              # このファイル
+├── docs/                                  # 詳細ドキュメント
+│   ├── 01-setup-guide.md                 # 初期セットアップガイド
+│   ├── 02-database-config.md             # データベース設定
+│   ├── 03-form-management.md             # フォーム管理ガイド
+│   ├── 04-troubleshooting.md             # トラブルシューティング
+│   ├── 05-directory-structure-refactoring.md # ディレクトリ構造リファクタリング
+│   ├── 06-project-structure.md           # プロジェクト構造ガイド
+│   └── 07-refactor-checklist.md          # リファクタリングチェックリスト
 ├── templates/                   # 再利用可能テンプレート
 │   ├── vercel.json             # Vercel設定テンプレート
 │   ├── middleware.ts           # ミドルウェアテンプレート
@@ -60,7 +63,25 @@ cp docs/vercel-knowledge/templates/vercel.json ./vercel.json
 cp docs/vercel-knowledge/templates/middleware.ts ./src/middleware.ts
 ```
 
-## 📋 クイックチェックリスト
+## � 主要ドキュメント
+
+### アーキテクチャ・構造
+
+- [`05-directory-structure-refactoring.md`](docs/05-directory-structure-refactoring.md) - Feature-driven architectureとApp Router準拠のディレクトリ構造ガイド
+- [`06-project-structure.md`](docs/06-project-structure.md) - プロジェクト全体の構造ガイド
+- [`07-refactor-checklist.md`](docs/07-refactor-checklist.md) - リファクタリング作業のチェックリスト
+
+### デプロイ・設定
+
+- [`01-setup-guide.md`](docs/01-setup-guide.md) - 初期セットアップガイド
+- [`02-database-config.md`](docs/02-database-config.md) - データベース設定
+- [`04-troubleshooting.md`](docs/04-troubleshooting.md) - トラブルシューティング
+
+### 開発ガイド
+
+- [`03-form-management.md`](docs/03-form-management.md) - フォーム管理のベストプラクティス
+
+## �📋 クイックチェックリスト
 
 Vercelデプロイ前の確認項目：
 
